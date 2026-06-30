@@ -8,18 +8,27 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Etch-a-Sketch</h1>
+        <h1 id="title"> Etch-a-Sketch </h1>
     </header>
     <main>
        
-        <div id="container">
+        <div id="controls">
             <div>
             <label for="size">Set Size:</label>
-            <input type="number" label="Set Size" id="size" min="1" max="100" value="16">
+            <input type="number"  id="size" min="1" max="100" autofocus>
+            <label for="color">Color:</label>
+            <input type="color"  id="color" value="#000000">
             </div>
-            <button id="reset">Reset</button>
+            <button id="reset">Clear</button>
         </div>
+        <div id="container"></div>
+    
     </main>
+    <footer>    
+        <p>Developed by ShivaDev</p>
+        <p>Solution to The Odin Project</p>
+        <p>&copy; 2026 ShivaDev. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

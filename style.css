@@ -7,17 +7,26 @@
 body{
     background-color: #ecdada;
 }
+ header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+  
 
 #title{
     text-align: center;
     font-size: 3rem;
+    background-color: #f5f5f5;
     color: #5c3d2e;
-    margin-top: 1rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
     text-shadow: 2px 2px #f5f5f5;
     text-decoration: dotted underline;
 }
 
-#container{
+#controls{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,7 +35,7 @@ body{
 }
 button{
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
     background-color: #5c3d2e;
@@ -38,10 +47,52 @@ button{
 input[type="number"]{
    
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
     background-color: #f5f5f5;
     color: #5c3d2e;
     box-shadow: 2px 2px #f5f5f5;
+}
+
+label{
+    font-size: 30px;
+    color: #5c3d2e;
+    margin-right: 10px;
+}
+
+
+#container {
+    
+    width: 33vw;
+    height: 33vw;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.square {
+    flex: 1;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.square:hover {
+    background-color: black;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #5c3d2e;
+    font-size: 20px;
 }
